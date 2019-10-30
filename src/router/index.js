@@ -9,9 +9,13 @@ const routes = [
     component: () => import('@/views/basic/basic-validate.vue')
   },
   {
+    path: '/number-validate',
+    component: () => import('@/views/basic/basic-number-validate.vue')
+  },
+  {
     path: '*',
     redirect: '/basic'
   }
 ]
-const router = new Router({ mode: 'history', routes })
+const router = new Router({ routes })
 export default router
