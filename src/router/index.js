@@ -13,6 +13,10 @@ const routes = [
     component: () => import('@/views/basic/basic-number-validate.vue')
   },
   {
+    path: '/basic-add',
+    component: () => import('@/views/basic/basic-add-item.vue')
+  },
+  {
     path: '*',
     redirect: '/basic'
   }
