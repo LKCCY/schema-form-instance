@@ -43,9 +43,19 @@ export default {
           { type: 'select', prop: 'region', formItem: { label: '活动区域' } }
         ],
         [
-          { type: 'datepicker', prop: 'date1', formItem: { label: '活动时间' }, colGrid: { span:11 } },
+          {
+            type: 'datepicker', 
+            prop: 'date1', 
+            formItem: { label: '活动时间' }, 
+            colGrid: { span:11 } 
+          },
           { slot: 'line', colGrid: { span:2 } },
-          { type: 'timeselect', prop: 'date2', formItem: { label: '', 'label-width': '0px' }, colGrid: { span:11 }}
+          { 
+            type: 'timeselect', 
+            prop: 'date2', 
+            formItem: { label: '', 'label-width': '0px' }, 
+            colGrid: { span:11 }
+          }
         ],
         [
           { type: 'switch', prop: 'delivery', formItem: { label: '即时配送' } }
@@ -57,16 +67,30 @@ export default {
           { type: 'radio', prop: 'resource', formItem: { label: '特殊资源' } }
         ],
         [
-          { type: 'input', prop: 'desc', formItem: { label: '活动形式' }, attrs: { type: 'textarea' } }
+          {
+            type: 'input', 
+            prop: 'desc', 
+            formItem: { label: '活动形式' }, 
+            attrs: { type: 'textarea' } 
+          }
         ],
         [
           { slot: 'submit' }
         ]
       ],
       options: {
-        region: [{ label: '区域一', value: 'shanghai' }, { label: '区域二', value: 'beijing' }],
-        type: [{ label: '美食/餐厅线上活动', value: '美食/餐厅线上活动' }, { label: '地推活动', value: '地推活动' }],
-        resource: [{ label: '线上品牌商赞助', value: '线上品牌商赞助' }, { label: '线下场地免费', value: '线下场地免费' }],
+        region: [
+          { label: '区域一', value: 'shanghai' },
+          { label: '区域二', value: 'beijing' }
+        ],
+        type: [
+          { label: '美食/餐厅线上活动', value: '美食/餐厅线上活动' }, 
+          { label: '地推活动', value: '地推活动' }
+        ],
+        resource: [
+          { label: '线上品牌商赞助', value: '线上品牌商赞助' }, 
+          { label: '线下场地免费', value: '线下场地免费' }
+        ],
       },
       rules: {
          name: [
@@ -112,13 +136,13 @@ export default {
 }
 </script>
 
-<style lang="less" scoped>
+<style scoped>
 .basic-instance{
   padding: 30px;
-  .line{
-    height: 2px;
-    background: rgb(220, 223, 230);
-    margin: -10px 5px 0;
-  }
+}
+.basic-instance .line{
+  height: 2px;
+  background: rgb(220, 223, 230);
+  margin: -10px 5px 0;
 }
 </style>
