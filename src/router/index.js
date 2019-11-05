@@ -17,6 +17,22 @@ const routes = [
     component: () => import('@/views/basic/basic-add-item.vue')
   },
   {
+    path: '/layout-gutter',
+    component: () => import('@/views/layout/layout-gutter.vue')
+  },
+  {
+    path: '/layout-offset',
+    component: () => import('@/views/layout/layout-offset.vue')
+  },
+  {
+    path: '/layout-flexible',
+    component: () => import('@/views/layout/layout-flexible.vue')
+  },
+  {
+    path: '/custom-user',
+    component: () => import('@/views/custom/user-set.vue')
+  },
+  {
     path: '*',
     redirect: '/basic'
   }
